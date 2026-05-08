@@ -102,12 +102,12 @@ export default function CartPopup() {
       <DropdownMenuTrigger asChild>
         <div className="relative">
           <HugeiconsIcon icon={ShoppingCart02Icon} />
-          <div className="absolute -top-2 -right-2 flex size-[2vh] items-center justify-center rounded-full bg-red-500 text-white">
+          <div className="absolute top-2 -right-2 flex size-[2vh] items-center justify-center rounded-full bg-red-500 text-white">
             <span className="text-sm">{cartState.cartLines.length}</span>
           </div>
         </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-[25vw] p-4">
+      <DropdownMenuContent className="w-full p-4 lg:w-[25vw]">
         <DropdownMenuGroup className="flex flex-col gap-3">
           {cartState.cartLines.length > 0 ? (
             cartState.cartLines.map((cartLine) => (

@@ -250,7 +250,7 @@ export default function CheckoutPage() {
               <span className="text-primary text-xs font-bold">Details</span>
             </div>
           </div>
-          <div className="space-y-10 px-[20%]">
+          <div className="space-y-10 px-10 lg:px-[20%]">
             <div>
               <div className="flex items-center gap-3">
                 <span className="bg-primary flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold text-white">
@@ -316,12 +316,12 @@ export default function CheckoutPage() {
                   Pick date and time
                 </h2>
               </div>
-              <div className="mt-6 flex gap-6 overflow-x-auto">
+              <div className="mt-6 flex flex-col gap-6 overflow-x-auto lg:flex-row">
                 <Calendar
                   mode="single"
                   selected={date}
                   onSelect={handleDateSelect}
-                  className="flex-1 rounded-lg border bg-white text-base"
+                  className="w-full flex-1 rounded-lg border bg-white text-base"
                   captionLayout="dropdown"
                 />
 
