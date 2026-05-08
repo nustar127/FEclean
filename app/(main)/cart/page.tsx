@@ -113,7 +113,7 @@ export default function CartPage() {
   };
 
   return (
-    <div className="px-20 py-10">
+    <div className="p-10 lg:p-20">
       <div className="mb-10">
         <span className="text-primary font-label mb-6 block text-base tracking-widest uppercase">
           Your Sanctuary Selection
@@ -124,8 +124,8 @@ export default function CartPage() {
           session.
         </p>
       </div>
-      <div className="flex gap-10">
-        <div className="w-2/3">
+      <div className="flex flex-col gap-10 lg:flex-row">
+        <div className="w-full lg:w-2/3">
           {cartState.cartLines.length > 0 ? (
             cartState.cartLines.map((cartLine) => (
               <CartLineItem
@@ -139,7 +139,7 @@ export default function CartPage() {
             </div>
           )}
         </div>
-        <div className="w-1/3">
+        <div className="w-full lg:w-1/3">
           <div className="rounded-lg border bg-white p-8 shadow-lg">
             <h2 className="mb-6 text-2xl font-semibold">Order Summary</h2>
             <div className="mb-6 rounded-xl bg-gray-50 p-4">

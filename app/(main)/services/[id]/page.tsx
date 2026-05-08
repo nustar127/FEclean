@@ -63,7 +63,7 @@ export default async function ServicePage({ params }: { params: Promise<{ id: st
   return (
     <main className="px-[10%] py-10">
       <section>
-        <div className="flex gap-5">
+        <div className="flex flex-col gap-5 lg:flex-row">
           <div className="group relative flex-1">
             <div className="bg-surface-container-low absolute -top-6 -left-6 -z-10 h-full w-full rounded-xl"></div>
             {mainImage ? (
